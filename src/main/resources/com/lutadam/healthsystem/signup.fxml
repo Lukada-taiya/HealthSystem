@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lutadam.healthsystem.SignUpController">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="250.0" style="-fx-background-color: #123;">
+            <children>
+                <Label layoutX="63.0" layoutY="66.0" text="NHIS" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Black" size="36.0" />
+                    </font>
+                </Label>
+                <Label layoutX="45.0" layoutY="141.0" text="A NATIONAL HEALTH" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="52.0" layoutY="192.0" text="TEST APPLICATION" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="45.0" layoutY="167.0" text="INSURANCE SCHEME" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="13.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: white;">
+            <children>
+                <TextField fx:id="tfName" layoutX="163.0" layoutY="174.0" />
+                <Label layoutX="43.0" layoutY="182.0" text="Name:" />
+                <Label layoutX="43.0" layoutY="225.0" text="Password:" />
+                <PasswordField fx:id="tfPassword" layoutX="162.0" layoutY="216.0" prefHeight="26.0" prefWidth="171.0">
+                    <font>
+                        <Font name="Arial" size="13.0" />
+                    </font></PasswordField>
+                <ImageView fitHeight="123.0" fitWidth="200.0" layoutX="141.0" layoutY="29.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@user.png" />
+                    </image></ImageView>
+                <Button fx:id="btnSignUp" defaultButton="true" layoutX="165.0" layoutY="304.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="146.0" style="-fx-background-color: #123;" text="Sign Up" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="16.0" />
+                    </font>
+                </Button>
+            <Label fx:id="tfPassword1" layoutX="43.0" layoutY="264.0" text="Retype Password" />
+            <PasswordField fx:id="tfRetypePassword" layoutX="161.0" layoutY="256.0" prefHeight="26.0" prefWidth="171.0">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="43.0" layoutY="358.0" text="Already a member?" />
+            <Button fx:id="btnLogIn" layoutX="172.0" layoutY="353.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Log In" />
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>
